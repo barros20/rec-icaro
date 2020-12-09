@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Alunos</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="titulo">Alunos</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Notas Alunos</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Lista / 5</th>
+							<th>Trabalho / 5</th>
+							<th>Prova</th>
+							<th>Soma</th>
+							<th>Média</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-alunos">
+						<tr class="aluno" >
+							<td class="info-nome">Maria</td>
+							<td class="info-lista">5</td>
+							<td class="info-trabalho">5</td>
+							<td class="info-prova">10</td>
+							<td class="info-soma">20</td>
+							<td class="info-media">10</td>
+						</tr>
+
+						<tr class="aluno" >
+							<td class="info-nome">Ana</td>
+							<td class="info-lista">2</td>
+							<td class="info-trabalho">1</td>
+							<td class="info-prova">8</td>
+							<td class="info-soma">11</td>
+							<td class="info-media">5.5</td>
+						</tr>
+
+						<tr class="aluno" >
+							<td class="info-nome">Carlos</td>
+							<td class="info-lista">1</td>
+							<td class="info-trabalho">1</td>
+							<td class="info-prova">4</td>
+							<td class="info-soma">6</td>
+							<td class="info-media">3</td>
+						</tr>
+
+						<tr class="aluno">
+							<td class="info-nome">Pedro</td>
+							<td class="info-lista">3</td>
+							<td class="info-trabalho">1</td>
+							<td class="info-prova">6</td>
+							<td class="info-soma">10</td>
+							<td class="info-media">5</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</section>			
+		</main>
+		<br> <br> <br> <br>
+		<section class="container">
+			<h2 id="titulo-form">Adicionar novo Aluno</h2>
+			<form id="form-adiciona">
+				<div class="grupo">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="digite o nome do Aluno" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="lista">Lista:</label>
+					<input id="lista" name="lista" type="text" placeholder="digite a nota  da lista" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="trabalho">Trabalho:</label>
+					<input id="trabalho" name="trabalho" type="text" placeholder="digite a nota ddo trabalho" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="prova">Prova</label>
+					<input id="prova" type="text" placeholder="digite a nota da prova" class="campo campo-medio">
+				</div>
+		
+				<button id="adicionar-aluno" class="botao bto-principal">Adicionar</button>
+			</form>
+		</section>
+
+	<script src="js/principal.js"></script>
+
+	</body>
+</html>
